@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Works on Firefox */
+*{
+    scrollbar-width: thin;
+    scrollbar-color: black transparent; 
+    
+    
+}
+
+/* Works on Chrome, Edge and Safari */
+
+*::-webkit-scrollbar{
+    width: 6px;
+    
+    
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    
+    background: #565656;
+    border-radius: 20px;
+    border: 1px solid #565656;
+}

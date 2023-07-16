@@ -1,0 +1,41 @@
+@media only screen and (max-width: 900px) {
+    .swiper-button-prev {
+        display: none!important;
+    }
+
+    .swiper-button-next {
+        display: none!important;
+    }
+}
+
+.swiper{
+    height: 100%;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    overflow: hidden !important;
+}
+
+
+.swiper-slide {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    
+    
+    
+}
+
+.swiper-pagination-bullet-active {
+    background: #b20082!important;
+    
+}
+
+.swiper-button-prev {
+    color: #565656!important;
+    display: block;
+}
+
+.swiper-button-next {
+    color: #565656!important;
+}

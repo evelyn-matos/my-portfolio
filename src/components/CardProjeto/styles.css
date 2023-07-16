@@ -1,0 +1,10 @@
+.css-46bh2p-MuiCardContent-root{
+    height: 130px!important;
+}
+
+@media screen and (max-width: 770px ) {
+    .css-46bh2p-MuiCardContent-root:last-child{
+        height: 250px!important;
+        
+    }
+}

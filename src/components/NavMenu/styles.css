@@ -1,0 +1,30 @@
+@media screen and (min-width: 770px) {
+    .MuiBottomNavigation-root{
+        
+        max-width: 450px!important;
+        height: 45px!important;
+        
+    }
+}
+
+
+.MuiBottomNavigation-root{
+    min-width: 100px!important;
+    width: 100%!important;
+    
+    background: transparent;
+    border: 1px solid #565656;
+    border-radius: 30px;
+    padding: 0;
+}
+
+.MuiButtonBase-root{
+    min-width: 10px;
+    height: auto;
+    color: #565656;
+   
+}
+
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected {
+    color: #b20082 !important;
+}
