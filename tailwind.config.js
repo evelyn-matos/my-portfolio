@@ -22,7 +22,7 @@ module.exports = {
       },
 
       height: {
-        relative: 'calc(100vh - 220px)'
+        relative: 'calc(100vh - 250px)'
       },
 
       fontFamily: {

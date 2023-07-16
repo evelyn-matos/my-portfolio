@@ -26,12 +26,13 @@ export default function MenuNav() {
 
     return (
         <nav className='flex w-full h-[90px] p-5 fixed left-0 bottom-0 bg-background-ligth dark:bg-background-dark md:bg-transparent md:absolute md:top-0 md:w-[500px] md:ml-[30%] md:items-center md:justify-center  '>
-            <BottomNavigation value={path} onChange={handleChange}  className='p-2 ' >
+            <BottomNavigation value={path} onChange={handleChange}  className='p-2 bg-background-ligth dark:bg-background-dark ' >
                 
                 <BottomNavigationAction
                     label="Home"
                     value="/"
                     icon={<Icones.HomeIcon />}
+                    className='active:text-pink'
                     
                        
                  />
