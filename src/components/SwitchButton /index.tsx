@@ -79,7 +79,7 @@ export default function SwitchButton() {
       <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} checked={darkMode} onChange={handleTheme}/>}
         label=''
-        className='self-end'
+        className='mr-[-10px] '
         
       />
     </FormGroup>
