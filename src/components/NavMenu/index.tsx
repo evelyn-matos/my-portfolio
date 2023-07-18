@@ -28,12 +28,13 @@ export default function MenuNav() {
         <nav className='flex  items-center  xl:justify-center  right-0  fixed h-max bottom-0 mt-auto  lg:right-[2%] z-50 top-0 w-screen lg:w-16 lg:max-w-md lg:h-screen '>
             <BottomNavigation 
                 value={path} 
-                onChange={handleChange}  
-                className='flex w-full py-8  bg-background-dark/10 lg:bg-background-ligth lg:dark:bg-background-dark  backdrop-blur-sm xl:flex-col items-center  lg:justify-center  px-0 md:px-40 lg:px-0 h-[50px] lg:h-[400px]  lg:rounded-full lg:border lg:border-gray' >
+                onChange={handleChange} 
+                classes={{root: `w-full h-[50px] px-7 py-8 flex items-center justify-evenly bg-background-dark/10  backdrop-blur-sm px- md:px-40  lg:h-[400px] lg:px-0  lg:flex-col   lg:justify-center  lg:rounded-full lg:border lg:border-gray lg:bg-background-ligth/10 lg:dark:bg-background-dark/10`}}
+               
+            >
                 
                 <BottomNavigationAction
-                    className='w-[30px] p-0 m-0 ml-[15px] xl:ml-0  text-gray hover:text-pink transition duration-700 ease-in-out '
-                    classes={{ selected: 'text-pink ' }}
+                    classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[20px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Home'
                     value="/"
                     icon={
@@ -50,8 +51,7 @@ export default function MenuNav() {
                
 
                 <BottomNavigationAction
-                    className='w-[30px] p-0 m-0 ml-[-30px] xl:ml-0  text-gray hover:text-pink transition duration-700 ease-in-out'
-                    classes={{ selected: 'text-pink ' }}
+                    classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Sobre'
                     value="/sobre"
                     icon={
@@ -67,8 +67,7 @@ export default function MenuNav() {
                 />
 
                 <BottomNavigationAction
-                    className='w-[30px] p-0 m-0 ml-[-30px] xl:ml-0  text-gray hover:text-pink transition duration-700 ease-in-out'
-                    classes={{ selected: 'text-pink ' }}
+                    classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Estudos'
                     value="/estudos"
                     icon={
@@ -84,8 +83,7 @@ export default function MenuNav() {
                 />
 
                 <BottomNavigationAction 
-                    className='w-[30px] p-0 m-0 ml-[-30px] xl:ml-0  text-gray hover:text-pink transition duration-700 ease-in-out'
-                    classes={{ selected: 'text-pink ' }}
+                    classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Skills'
                     value="/skills" 
                     icon={
@@ -101,8 +99,7 @@ export default function MenuNav() {
                 />
 
                 <BottomNavigationAction 
-                    className='w-[30px] p-0 m-0 ml-[-30px] xl:ml-0  text-gray hover:text-pink transition duration-700 ease-in-out'
-                    classes={{ selected: 'text-pink ' }}
+                    classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Projetos'
                     value="/projetos" 
                     icon={
@@ -117,8 +114,7 @@ export default function MenuNav() {
                 />
 
                 <BottomNavigationAction 
-                    className='w-[30px] p-0 m-0 ml-[-30px] xl:ml-0  text-gray hover:text-pink transition duration-700 ease-in-out' 
-                    classes={{ selected: 'text-pink ' }}
+                    classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Contato'
                     value="/contato" 
                     icon={
