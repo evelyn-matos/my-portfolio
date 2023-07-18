@@ -27,13 +27,15 @@ export default function MenuNav() {
     return (
         <nav className='flex  items-center  xl:justify-center  right-0  fixed h-max bottom-0 mt-auto  lg:right-[2%] z-50 top-0 w-screen lg:w-16 lg:max-w-md lg:h-screen '>
             <BottomNavigation 
+                sx={{background: 'transparent'}}
                 value={path} 
                 onChange={handleChange} 
                 classes={{root: `w-full h-[50px] px-7 py-8 flex items-center justify-evenly bg-background-dark/10  backdrop-blur-sm px- md:px-40  lg:h-[400px] lg:px-0  lg:flex-col   lg:justify-center  lg:rounded-full lg:border lg:border-gray lg:bg-background-ligth/10 lg:dark:bg-background-dark/10`}}
-               
+                
             >
                 
                 <BottomNavigationAction
+                    sx={{minWidth: '20px'}}
                     classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[20px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Home'
                     value="/"
@@ -51,6 +53,7 @@ export default function MenuNav() {
                
 
                 <BottomNavigationAction
+                    sx={{minWidth: '20px'}}
                     classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Sobre'
                     value="/sobre"
@@ -67,6 +70,7 @@ export default function MenuNav() {
                 />
 
                 <BottomNavigationAction
+                    sx={{minWidth: '20px'}}
                     classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Estudos'
                     value="/estudos"
@@ -83,6 +87,7 @@ export default function MenuNav() {
                 />
 
                 <BottomNavigationAction 
+                    sx={{minWidth: '20px'}}
                     classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Skills'
                     value="/skills" 
@@ -99,6 +104,7 @@ export default function MenuNav() {
                 />
 
                 <BottomNavigationAction 
+                    sx={{minWidth: '20px'}}
                     classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Projetos'
                     value="/projetos" 
@@ -114,6 +120,7 @@ export default function MenuNav() {
                 />
 
                 <BottomNavigationAction 
+                    sx={{minWidth: '20px'}}
                     classes={{ selected: 'text-pink ', root: `p-0 m-0 ml-[-30px] lg:ml-0 text-gray hover:text-pink transition duration-700 ease-in-out` }}
                     label='Contato'
                     value="/contato" 
