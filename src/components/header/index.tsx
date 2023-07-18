@@ -67,14 +67,16 @@ export default function Header() {
 
 
   return (
-    <header className='w-full h-[50px] flex justify-between items-center mb-3 md:mb-10 '>
+    <header className='w-full md:max-w-[1150px] h-[50px] flex justify-between items-center mb-3 md:mb-10 '>
         <div>
             <div className=' flex items-center justify-between p-2 border border-gray rounded-3xl text-pink'>
                 {pageActive?.icon}
                 <p className='ml-2'>{pageActive?.name}</p>
             </div>
         </div>
-        <SwitchButton/>
+        <div>
+            <SwitchButton />
+        </div>
     </header>
   )
 }
