@@ -31,3 +31,11 @@
     border-radius: 20px;
     border: 1px solid #565656;
 }
+
+
+/* Alterar cor ButtonNav*/
+
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root.Mui-selected {
+    color: #b20082 !important;
+}
+
