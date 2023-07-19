@@ -18,7 +18,7 @@ export default function Home() {
       <h1 className="block text-3xl mb-3 md:text-5xl leading-10 md:mb-6 text-black dark:text-white ">Hello Recruiter!<br/> Meu nome é <span className="font-indie  text-3xl md:text-5xl text-pink">Evelyn</span>, sou desenvolvedora Frontend</h1>
       <p className="text-base text-black dark:text-white">Aqui você descobrirá mais sobre mim e meus projetos!</p>
       <p className="text-base text-black dark:text-white" >Fique a vontade para entrar em contato comigo, em caso de qualquer dúvida</p>
-      <div className='md:flex '>
+      <div className='lg:flex '>
         
         <section className='mt-8 flex flex-col items-center md:flex-row md:flex-1'>
           <div className='w-52 h-52 '>
