@@ -2,6 +2,9 @@ import './global.css';
 import { Montserrat } from 'next/font/google';
 import MenuNav from '@/components/NavMenu';
 import Header from '@/components/header';
+import { Suspense } from 'react';
+import Loading from './loading';
+
 
 const Mont =  Montserrat({ subsets: ['latin'] })
 
@@ -21,7 +24,9 @@ export default function RootLayout({
       
       <body  className={`${Mont.className}  max-w-[1248px] flex flex-col  mx-auto p-5 bg-background-ligth dark:bg-background-dark`}>
         <Header/>
-        {children}
+        <Suspense fallback={<Loading/>}>
+          {children}
+        </Suspense>
         <MenuNav/>
       </body>
     </html>

@@ -14,7 +14,7 @@ import photoDev from '../../public/images/imagedev.jpeg';
 
 export default function Home() {
   return (
-    <main className='w-full md:max-w-[1150px] ' >
+    <main className='w-full md:max-w-900 lg:max-w-[1150px] ' >
       <h1 className="block text-3xl mb-3 md:text-5xl leading-10 md:mb-6 text-black dark:text-white ">Hello Recruiter!<br/> Meu nome é <span className="font-indie  text-3xl md:text-5xl text-pink">Evelyn</span>, sou desenvolvedora Frontend</h1>
       <p className="text-base text-black dark:text-white">Aqui você descobrirá mais sobre mim e meus projetos!</p>
       <p className="text-base text-black dark:text-white" >Fique a vontade para entrar em contato comigo, em caso de qualquer dúvida</p>
