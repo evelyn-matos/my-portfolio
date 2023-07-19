@@ -36,14 +36,14 @@ export default function Skills() {
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: '#565656' }} >
           <TabList onChange={handleChange} >
-            <Tab label="Hard Skills" value="1" classes={{root:`${value === '1' ? CardStyle.active : CardStyle.default}` }} />
-            <Tab label="Soft Skills" value="2"  classes={{root:`${value === '2' ? CardStyle.active : CardStyle.default}` }} />
+            <Tab label="Hard Skills" value="1" classes={{selected: 'text-pink border-b border-pink', root:`text-gray` }} />
+            <Tab label="Soft Skills" value="2"  classes={{selected: 'text-pink border-b border-pink', root:`text-gray`}} />
           </TabList>
         </Box>
         <TabPanel value="1">
           <div >
           {SkillItem.map((skill, index) => (
-            <section key={index} className='last:mb-20'>
+            <section key={index} className='last:mb-20 '>
               <span className=' text-pink p-3 mb-5 border-b border-b-gray'>{skill.title}</span>
               <div className='mt-10 mb-10 grid gap-3 grid-cols-2 grid-rows-2 md:grid-cols-4  lg:grid-rows-1'>
                 {skill.tecnologias.map((item, index) => (
