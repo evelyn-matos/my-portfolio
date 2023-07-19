@@ -19,7 +19,7 @@ export default function Skills() {
   };
 
   return (
-    <main className='h-relative'>
+    <main className='w-full  lg:max-w-[900px] xl:max-w-[1100px]'>
       <h1 className="block text-3xl mb-3 md:text-5xl leading-10 md:mb-6 text-black dark:text-white ">Minhas <span className="font-indie text-3xl md:text-5xl text-pink">Habilidades</span></h1>
       <Box sx={{ width: '100%', typography: 'body1' }}>
       <TabContext value={value}>

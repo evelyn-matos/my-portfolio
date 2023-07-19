@@ -36,7 +36,7 @@ export default function Projetos() {
     
   }
   return (
-    <main >
+    <main className='w-full lg:max-w-[900px] xl:max-w-[1100px] '>
         <h1 className="block text-3xl mb-3 md:text-5xl leading-10 md:mb-6 text-black dark:text-white ">Meus <span className="font-indie text-3xl md:text-5xl text-pink">Projetos</span></h1>
       <div className='h-relative flex justify-center items-center p-2 md:h-auto'>
         <Slider settings={settings} >

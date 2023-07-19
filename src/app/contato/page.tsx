@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Contato() {
   return (
-    <main>
+    <main className='w-full lg:max-w-[900px] xl:max-w-[1100px]'>
         <h1 className="block text-3xl mb-3 md:text-5xl leading-10 md:mb-6 text-black dark:text-white ">Vamos trabalhar <span className="font-indie text-3xl md:text-5xl text-pink">juntos?!</span></h1>
         <div className='mb-20'>
             <ul className='list-none text text-black dark:text-white p-5'>

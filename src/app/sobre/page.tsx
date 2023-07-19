@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Sobre() {
   return (
-    <main>
+    <main className='w-full lg:max-w-[900px] xl:max-w-[1100px]'>
       <h1 className="block text-3xl mb-3 md:text-5xl leading-10 md:mb-6 text-black dark:text-white ">Todo sonho tem um <span className="font-indie text-3xl md:text-5xl text-pink">começo</span>, esse é o meu...</h1>
       <p className="text-base text-black dark:text-white">Depois de alguns anos trabalhando como assistente administrativo, resolvi seguir meu sonho e fazer a transição para a área de Técnologia. Sou do interior do Ms, mas atualmente moro em Vitória no ES.</p>
       <div className='mb-20'>

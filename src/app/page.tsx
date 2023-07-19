@@ -14,13 +14,13 @@ import photoDev from '../../public/images/imagedev.jpeg';
 
 export default function Home() {
   return (
-    <main className='w-full md:max-w-900 lg:max-w-[1150px] ' >
+    <main className='w-full  lg:max-w-[900px] xl:max-w-[1100px]' >
       <h1 className="block text-3xl mb-3 md:text-5xl leading-10 md:mb-6 text-black dark:text-white ">Hello Recruiter!<br/> Meu nome é <span className="font-indie  text-3xl md:text-5xl text-pink">Evelyn</span>, sou desenvolvedora Frontend</h1>
       <p className="text-base text-black dark:text-white">Aqui você descobrirá mais sobre mim e meus projetos!</p>
       <p className="text-base text-black dark:text-white" >Fique a vontade para entrar em contato comigo, em caso de qualquer dúvida</p>
       <div className='lg:flex '>
         
-        <section className='mt-8 flex flex-col items-center md:flex-row md:flex-1'>
+        <section className='mt-8 flex flex-col items-center lg:flex-row lg:flex-1'>
           <div className='w-52 h-52 '>
             <Image 
               src={photoDev}
@@ -58,7 +58,7 @@ export default function Home() {
             </div> 
           </div>
         </section>
-        <section className=' mt-8 mb-20 md:flex-1 '>
+        <section className=' mt-8 mb-20 lg:flex-1 '>
           <span className="block font-indie text-xl  text-center text-pink md:text-3xl md:mt-12">Principais Tecnologias</span>
           <ul className='flex justify-evenly mt-10 '>
             <li className="w-12 h-12 ">
