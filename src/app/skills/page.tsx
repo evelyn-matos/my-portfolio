@@ -28,16 +28,23 @@ export default function Skills() {
       <Box sx={{ width: '100%', typography: 'body1' }}>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: '#565656' }} >
-          <Tabs onChange={handleChange} value={value} sx={{
+          <Tabs onChange={handleChange} value={value} className='tabsRoot' sx={{
             '& .MuiTabs-indicator': {
               backgroundColor: '#b20082'
               },
-            '& .Mui-selected': {
-              color: '#b20082'
+            '& .MuiTab-textColorPrimary': {
+              color: '#565656',
+              
+              '&.Mui-selected': {
+                color: '#b20082'
+              }
             }
+
+            
+            
           }}>
-            <Tab label="Hard Skills" value="1" classes={{root: `text-gray`}}/>
-            <Tab label="Soft Skills" value="2" classes={{root: `text-gray`}} />
+            <Tab label="Hard Skills" value="1" className='tabRoot'/>
+            <Tab label="Soft Skills" value="2" className='tabRoot'/>
           </Tabs>
         </Box>
         <TabPanel value="1">
