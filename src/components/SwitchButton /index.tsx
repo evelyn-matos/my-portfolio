@@ -21,7 +21,8 @@ export default function SwitchButton() {
         
     }, [darkMode])
 
-    console.log(darkMode)
+   
+
     const MaterialUISwitch = styled(Switch)(({ theme }) => ({
         width: 62,
         height: 34,

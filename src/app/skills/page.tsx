@@ -2,24 +2,14 @@
 import React from 'react'
 import { SkillItem } from '@/services/skillsItem';
 import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Image from 'next/image';
 import AccordionSoftSkill from '@/components/AcordionSkill';
+import { styled } from '@mui/material/styles';
+import { Tab, Tabs,} from '@mui/material';
 
 
-const CardStyle = {
-  active: {
-    color: "#b20082",
-    border: "1px solid #b20082"
-  },
-
-  default: {
-    color: '#565656',
-  }
-}
 
 export default function Skills() {
 
@@ -29,16 +19,26 @@ export default function Skills() {
     setValue(newValue);
   };
 
+ 
+
+
   return (
     <main className='w-full  lg:max-w-[900px] xl:max-w-[1100px]'>
       <h1 className="block text-3xl mb-3 md:text-5xl leading-10 md:mb-6 text-black dark:text-white ">Minhas <span className="font-indie text-3xl md:text-5xl text-pink">Habilidades</span></h1>
       <Box sx={{ width: '100%', typography: 'body1' }}>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: '#565656' }} >
-          <TabList onChange={handleChange} >
-            <Tab label="Hard Skills" value="1" classes={{selected: 'text-pink border-b border-pink', root:`text-gray` }} />
-            <Tab label="Soft Skills" value="2"  classes={{selected: 'text-pink border-b border-pink', root:`text-gray`}} />
-          </TabList>
+          <Tabs onChange={handleChange} value={value} sx={{
+            '& .MuiTabs-indicator': {
+              backgroundColor: '#b20082'
+              },
+            '& .Mui-selected': {
+              color: '#b20082'
+            }
+          }}>
+            <Tab label="Hard Skills" value="1" classes={{root: `text-gray`}}/>
+            <Tab label="Soft Skills" value="2" classes={{root: `text-gray`}} />
+          </Tabs>
         </Box>
         <TabPanel value="1">
           <div >
