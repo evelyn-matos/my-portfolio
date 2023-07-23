@@ -12,6 +12,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Image from 'next/image';
+import Tooltip from '@mui/material/Tooltip';
 import './styles.css'
 
 import { ProjetosType } from '@/interfaces/projetoType';
@@ -43,10 +44,10 @@ export default function CardProjeto({title, img, tecnologias, desc, github, link
    
 
   return (
-    <Card  className='max-w-[345px] min-h-[420px] rounded-md bg-stone-100 dark:bg-neutral-800 md:mb-7'>
+    <Card  className='max-w-[345px] min-h-[420px] mb-10 rounded-md bg-stone-100 dark:bg-neutral-800 md:mb-7'>
       <CardHeader
         title={title}
-        className='font-indie text-pink'
+        className='text-pink'
       />
 
       <CardMedia >
@@ -64,36 +65,31 @@ export default function CardProjeto({title, img, tecnologias, desc, github, link
           {desc}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing >
-        <IconButton aria-label="Github">
-        <GitHubIcon className='hover:text-pink transition duration-700 ease-in out' />
-        </IconButton>
-        <IconButton aria-label="Visualizar Deploy" >
-          <VisibilityIcon className='hover:text-pink transition duration-700 ease-in out' />
-        </IconButton>
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon className='hover:text-pink'/>
-        </ExpandMore>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent >
-          <Typography paragraph>
-            <span className='p-3 text-pink'>Tecnologias Utilizadas</span>
-            <ul className='p-3 mb-32 flex items-center justify-evenly'>
-              {tecnologias.map((item, index) => (
-                <li key={index}>
+      <div className='flex items-center justify-between'>
+        <CardActions disableSpacing className='flex-auto'>
+          <IconButton aria-label="Github">
+            <Tooltip title='Vusualizar Github'>
+              <GitHubIcon className='text-gray hover:text-pink transition duration-700 ease-in out' />
+            </Tooltip>
+          </IconButton>
+          <IconButton aria-label="Visualizar Deploy" >
+            <Tooltip title='Vusualizar Deploy'>
+              <VisibilityIcon className='text-gray hover:text-pink transition duration-700 ease-in out' />
+            </Tooltip>
+          </IconButton>
+        </CardActions>
+        <div className='flex-auto p-2'>
+          <ul className='flex items-center justify-between'>
+            {tecnologias.map((item, index) => (
+              <li key={index} className='p-2'>
+                <Tooltip title={item.name}>
                   <Image src={item.icone} alt={item.name} width={25} height={25}/>
-                </li>
-              ))}
-            </ul>
-          </Typography>
-        </CardContent>
-      </Collapse>
+                </Tooltip>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </Card>
   )
 }

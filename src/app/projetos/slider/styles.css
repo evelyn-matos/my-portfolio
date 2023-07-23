@@ -18,16 +18,12 @@
     
 }
 
+.swiper-pagination-bullet{
+    background-color: #565656!important;
+}
+
 .swiper-pagination-bullet-active {
     background: #b20082!important;
     
 }
 
-.swiper-button-prev {
-    color: #565656!important;
-    display: block;
-}
-
-.swiper-button-next {
-    color: #565656!important;
-}
