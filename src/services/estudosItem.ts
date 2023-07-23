@@ -5,7 +5,7 @@ export const CardEstudos: EstudosProp[] = [
         title: 'Orange Tech+',
         subTitle: 'BootCamp Frontend',
         empresa: 'Dio + Banco Inter',
-        description: 'Primeiro bootcamp que participei, onde eu me apaixonei por React. Realizamos um Clone da página da Dio e uma pokedex',
+        description: 'Esse foi o primeiro bootcamp que participei, onde eu me apaixonei por React. Pratiquei bastante Javascript criando uma Pokedex e Clone da Dio com react.',
         link: 'https://www.dio.me/certificate/BDD12E2E/share'
     },
 
@@ -14,7 +14,7 @@ export const CardEstudos: EstudosProp[] = [
         subTitle: 'Desenvolvedor Fullstack',
         empresa: 'B7 Web',
         description: 'Através deste curso desenvolvi grandes habilidades técnicas e foquei no frontend, aprendendo JavaScript, React, Next, styled Components, tailwind...',
-        link: 'https://www.dio.me/certificate/BDD12E2E/share'
+        link: 'https://www.linkedin.com/in/evelyn-mm/details/certifications/'
     },
 
     {

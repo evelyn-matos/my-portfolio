@@ -53,7 +53,7 @@ export default function AccordionSoftSkill() {
       </AccordionSummary>
       <AccordionDetails>
         <Typography className='text-gray dark:text-white'>
-          Adoro resolver problemas e não desisto fácil. Não paro enquanto não reolver.
+          Adoro resolver problemas e não desisto fácil. Não paro enquanto não resolver.
         </Typography>
       </AccordionDetails>
     </Accordion>

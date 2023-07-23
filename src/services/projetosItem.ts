@@ -4,23 +4,24 @@ import svg from '@/shared/iconsSVG';
 import projetoCodificador from '../../public/images/projeto-codificador.png';
 import projetoJogoMemoria from '../../public/images/projeto-jogoMemoria.png';
 import projetoPokedex from '../../public/images/projeto-pokedex.png';
-import projetoPortifolio from '../../public/images/projeto-portifolio.jpeg';
+import projetoPortifolio from '../../public/images/projetoPortfolio.jpeg';
 import Loading from '../../public/images/loadingCoding.png'
 
 export const ProjetosItem: ProjetosType[] = [
     {
-        title: 'Portifólio Pessoal',
-        desc: 'Esse projeto foi foi pensado em trazer algo diferente do habitual, não apenas no sentido estético mas para que eu pudesse praticar meus conhecimentos e poder mostra-los assim que meu portifólio fosse aberto. ',
+        title: 'Portfólio Pessoal',
+        desc: 'Esse projeto foi foi pensado em trazer algo diferente do habitual, não apenas no sentido estético mas para que eu pudesse praticar meus conhecimentos e poder mostrá-los assim que meu portfólio fosse aberto. ',
         img: projetoPortifolio, 
-        github: 'github.com/evelyn',
-        link: 'projeto.com',
+        github: 'https://github.com/evelyn-matos/my-portifolio',
+        link: 'https://evelyn-matos.vercel.app/',
 
         tecnologias: [
             {name: 'React', icone: svg.React},
+            {name: 'Next', icone: svg.Next},
             {name: 'Typescript', icone: svg.Typescript},
-            {name: 'Swiper',  icone: svg.Swiper },
-            {name: 'StyledComponents', icone: svg.StyledComponents},
+            {name: 'TailwindCss', icone: svg.Tailwind},
             {name: 'Material UI', icone: svg.MaterialUi},
+            {name: 'Swiper',  icone: svg.Swiper }
         ]
     },
 

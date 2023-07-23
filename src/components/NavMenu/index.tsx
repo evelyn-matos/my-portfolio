@@ -26,7 +26,7 @@ export default function MenuNav() {
    
 
     return (
-        <nav className='flex  items-center  xl:justify-center  right-0  fixed h-max bottom-0 mt-auto  lg:right-[2%] z-50 top-0 w-screen lg:w-16 lg:max-w-md lg:h-screen '>
+        <nav className='flex  items-center  xl:justify-center  right-0  fixed h-max bottom-0 mt-auto  lg:right-[2%] z-50 top-0 w-screen lg:w-16 lg:max-w-md lg:h-screen  border-t border-gray xl:border-none'>
             <BottomNavigation 
                 sx={{background: 'transparent', minHeight: '50px', maxHeight:'400px', height:'auto', padding: '10px'}}
                 value={path} 
