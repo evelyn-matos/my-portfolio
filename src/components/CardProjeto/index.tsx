@@ -64,12 +64,12 @@ export default function CardProjeto({title, img, tecnologias, desc, github, link
       </CardContent>
       <div className='flex items-center justify-between'>
         <CardActions disableSpacing className='flex-auto'>
-          <IconButton aria-label="Github" href={github}>
+          <IconButton aria-label="Github" href={github}  target='_blank'>
             <Tooltip title='Vusualizar Github'>
               <GitHubIcon className='text-gray hover:text-pink transition duration-700 ease-in out' />
             </Tooltip>
           </IconButton>
-          <IconButton aria-label="Visualizar Deploy" href={link}>
+          <IconButton aria-label="Visualizar Deploy" href={link} target='_blank'>
             <Tooltip title='Vusualizar Deploy'>
               <VisibilityIcon className='text-gray hover:text-pink transition duration-700 ease-in out' />
             </Tooltip>
