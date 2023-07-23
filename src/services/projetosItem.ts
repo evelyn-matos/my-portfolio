@@ -5,6 +5,7 @@ import projetoCodificador from '../../public/images/projeto-codificador.png';
 import projetoJogoMemoria from '../../public/images/projeto-jogoMemoria.png';
 import projetoPokedex from '../../public/images/projeto-pokedex.png';
 import projetoPortifolio from '../../public/images/projeto-portifolio.jpeg';
+import Loading from '../../public/images/loadingCoding.png'
 
 export const ProjetosItem: ProjetosType[] = [
     {
@@ -64,6 +65,22 @@ export const ProjetosItem: ProjetosType[] = [
             {name: 'Html', icone: svg.Html},
             {name: 'Css', icone: svg.Css},
             {name: 'JavaScript', icone: svg.Javascript}
+            
+        ]
+
+        
+    },
+
+    {
+        title: 'Landing Page Easybank', 
+        desc: 'Estou desenvolvendo um projeto de uma Landing Page focado em aprimorar minhas habilidades de responsividade com React e Styled components',
+        img: Loading, 
+        github: '',
+        link: '',
+        tecnologias: [
+            {name: 'React', icone: svg.React},
+            {name: 'Styled Components', icone: svg.StyledComponents},
+            {name: 'Bootstrap', icone: svg.Bootstrap}
             
         ]
 

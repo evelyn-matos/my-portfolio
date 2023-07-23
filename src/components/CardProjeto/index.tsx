@@ -11,11 +11,9 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
 import Tooltip from '@mui/material/Tooltip';
-import './styles.css'
-
 import { ProjetosType } from '@/interfaces/projetoType';
 import { CardHeader } from '@mui/material';
-import Link from 'next/link';
+
 
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -49,7 +47,7 @@ export default function CardProjeto({title, img, tecnologias, desc, github, link
         className='text-pink'
       />
 
-      <CardMedia >
+      <CardMedia className='max-h-[200px] overflow-hidden'>
         <Image 
           src={img}
           alt={title}
