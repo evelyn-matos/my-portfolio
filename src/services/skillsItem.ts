@@ -27,8 +27,8 @@ export const SkillItem: PropsSkill[] = [
         title: 'Estilizadores',
         tecnologias: [
             {name: 'Bootstrap', icone: svg.Bootstrap},
+            {name: 'Sass', icone: svg.Sass},
             {name: 'Tailwind', icone: svg.Tailwind},
-            {name: 'Material UI', icone: svg.MaterialUi},
             {name: 'Styled Components', icone: svg.StyledComponents},        
         ],
         
@@ -36,8 +36,7 @@ export const SkillItem: PropsSkill[] = [
     {
         title: 'Ferramentas',
         tecnologias: [
-            {name: 'Sass', icone: svg.Sass},
-            {name: 'Webpack', icone: svg.Webpack},
+            {name: 'Material UI', icone: svg.MaterialUi},
             {name: 'Swiper', icone: svg.Swiper },
                    
         ],
