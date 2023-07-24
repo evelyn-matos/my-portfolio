@@ -80,8 +80,8 @@ export const ProjetosItem: ProjetosType[] = [
         link: '',
         tecnologias: [
             {name: 'React', icone: svg.React},
-            {name: 'Styled Components', icone: svg.StyledComponents},
-            {name: 'Bootstrap', icone: svg.Bootstrap}
+            {name: 'Bootstrap', icone: svg.Bootstrap},
+            {name: 'Sass', icone: svg.Sass},
             
         ]
 
