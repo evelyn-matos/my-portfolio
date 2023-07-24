@@ -74,7 +74,7 @@ export const ProjetosItem: ProjetosType[] = [
 
     {
         title: 'Landing Page Easybank', 
-        desc: 'Estou desenvolvendo um projeto de uma Landing Page focado em aprimorar minhas habilidades de responsividade com React e Styled components',
+        desc: 'Estou desenvolvendo um projeto de uma Landing Page focado em aprimorar minhas habilidades de responsividade com React, Bootstrap e Sass',
         img: Loading, 
         github: '',
         link: '',
