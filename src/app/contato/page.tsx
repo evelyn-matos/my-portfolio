@@ -15,7 +15,7 @@ export default function Contato() {
             </ul>
             <div className=' h-24 flex flex-col items-center justify-between md:max-w-[450px] md:flex-row md:ml-[33%]'>
             <ButtonLink link='mailto:euevelynmatos@gmail.com?subject=Proposta de Trabalho&body='> Enviar Proposta no Email</ButtonLink>
-            <ButtonLink link='https://www.linkedin.com/in/evelyn-mm/' > Conversar no Whatsapp</ButtonLink>
+            <ButtonLink link='https://wa.me/message/ANISUNMFYS4DG1' > Conversar no Whatsapp</ButtonLink>
             </div>
       </div>
     </main>

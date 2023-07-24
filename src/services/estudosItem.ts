@@ -22,7 +22,7 @@ export const CardEstudos: EstudosProp[] = [
         subTitle: 'Iniciante em Programação',
         empresa: 'Alura + Oracle',
         description: 'Aproveitei para revisar meus conhecimentos em HTML, CSS e GIT. Criei projeto de um Decodificador em Javascipt',
-        link: 'https://cursos.alura.com.br/user/euevelynmatos/degree-logica-de-programacao-turma-5-oracle-one-561815/certificate',
+        link: 'https://cursos.alura.com.br/degree/certificate/3ee34d75-223f-4f44-bedf-0ee35c043974',
     },
 
     {
@@ -31,6 +31,14 @@ export const CardEstudos: EstudosProp[] = [
         empresa: 'Alura + Oracle',
         description: 'Conteúdo fantástico sobre produtividade e foco. Aprendi como me organizar para ser mais produtiva e eficiente. ',
         link: 'https://cursos.alura.com.br/degree/certificate/0bf195e3-6aa5-4336-ba6c-b633822b9fe1',
+    },
+
+    {
+        title: 'ONE',
+        subTitle: 'Front End T5 - ONE',
+        empresa: 'Alura + Oracle',
+        description: 'Revisando conhecimento em Javascript, consumindo e tratando dados de uma API, criando requisições e validando formulários.',
+        link: 'https://cursos.alura.com.br/degree/certificate/152f036b-d2d9-43e9-b9fe-935fa0efa1df',
     },
 
 
