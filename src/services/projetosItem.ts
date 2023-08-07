@@ -5,6 +5,7 @@ import projetoCodificador from '../../public/images/projeto-codificador.png';
 import projetoJogoMemoria from '../../public/images/projeto-jogoMemoria.png';
 import projetoPokedex from '../../public/images/projeto-pokedex.png';
 import projetoPortifolio from '../../public/images/projetoPortfolio.jpeg';
+import projetoEasybank from '../../public/images/projeto-easybank.jpeg';
 import Loading from '../../public/images/loadingCoding.png'
 
 export const ProjetosItem: ProjetosType[] = [
@@ -23,6 +24,21 @@ export const ProjetosItem: ProjetosType[] = [
             {name: 'Material UI', icone: svg.MaterialUi},
             {name: 'Swiper',  icone: svg.Swiper }
         ]
+    },
+
+    {
+        title: 'Landing Page Easybank', 
+        desc: 'Projeto de uma Landing Page focado em aprimorar minhas habilidades com React, Bootstrap e Sass. Challenge do site Frontend Mentor',
+        img: projetoEasybank, 
+        github: 'https://github.com/evelyn-matos/easybank',
+        link: 'https://easybank-ecru.vercel.app/',
+        tecnologias: [
+            {name: 'React', icone: svg.React},
+            {name: 'Typescript', icone: svg.Typescript},
+            {name: 'Bootstrap', icone: svg.Bootstrap},
+            {name: 'Sass', icone: svg.Sass},
+            
+        ]   
     },
 
     {
@@ -73,18 +89,19 @@ export const ProjetosItem: ProjetosType[] = [
     },
 
     {
-        title: 'Landing Page Easybank', 
-        desc: 'Estou desenvolvendo um projeto de uma Landing Page focado em aprimorar minhas habilidades de responsividade com React, Bootstrap e Sass',
+        title: 'Controle de Finanças Pessoais', 
+        desc: 'Estou buscando desenvolver um site de controle de finanças pessoais, praticando conhecimento frontend e estudando backend para aplicar neste projeto',
         img: Loading, 
         github: '',
         link: '',
         tecnologias: [
             {name: 'React', icone: svg.React},
-            {name: 'Bootstrap', icone: svg.Bootstrap},
-            {name: 'Sass', icone: svg.Sass},
+            {name: 'Next', icone: svg.Next},
+            {name: 'Typescript', icone: svg.Typescript},
+            {name: 'TailwindCss', icone: svg.Tailwind},
+            {name: 'Material UI', icone: svg.MaterialUi},
             
-        ]
-
-        
+            
+        ]   
     },
 ]
